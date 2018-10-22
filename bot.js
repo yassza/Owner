@@ -360,4 +360,25 @@ message.member.voiceChannel.join();
 
 
 
+client.on('message', message => {
+    if(message.content === '-مبلغ'){
+        message.channel.send('#credits')
+    }
+});
+
+
+client.on('message', message => {
+    if(message.content === '-ريب'){
+        message.channel.send('#rep <@504016941179076610>')
+    }
+});
+
+client.on('message', message => {
+    if (message.content === "تحويل" + "<@" + `${client.user.id}` + ">") {
+        message.channel.send('#credit <@504016941179076610>')
+    }
+});
+
+
+
 client.login(process.env.BOT_TOKEN);
