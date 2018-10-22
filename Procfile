@@ -1,1 +1,1 @@
-worker: node Owner.js
+worker: node wner.js
