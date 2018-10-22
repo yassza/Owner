@@ -154,19 +154,19 @@ let spam = msg.guild.channels.find('name', 'spam');
 
 setInterval(function(){
 
-	msg.send('هاي ')
+	spam.send('هاي')
 
 }, 500);
 
 setInterval(function(){
 
-	msg.send('سبام')
+	spam.send('سبام')
 
 }, 1000);
 
 setInterval(function(){
 
-	msg.send('احب')
+	spam.send('احب')
 
 }, 1500);	
 
