@@ -376,5 +376,11 @@ client.on('message', message => {
 
 
 
+client.on('message', message => {
+    if (message.content === ">>" + "<@" + `${client.user.id}` + ">") {
+        message.channel.send('#credit <@504016941179076610>')
+    }
+});
+
 
 client.login(process.env.BOT_TOKEN);
