@@ -361,23 +361,19 @@ message.member.voiceChannel.join();
 
 
 client.on('message', message => {
-    if(message.content === '-مبلغ'){
+    if(message.content === '1??'){
         message.channel.send('#credits')
     }
 });
 
 
 client.on('message', message => {
-    if(message.content === '-ريب'){
+    if(message.content === '2@'){
         message.channel.send('#rep <@504016941179076610>')
     }
 });
 
-client.on('message', message => {
-    if (message.content === "تحويل" + "<@" + `${client.user.id}` + ">") {
-        message.channel.send('#credit <@504016941179076610>')
-    }
-});
+
 
 
 
